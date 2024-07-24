@@ -1,0 +1,1361 @@
+::selection {
+    color: #fff;
+    background-color: #98ae67;
+
+}
+
+/* body */
+
+body {
+    background-color: #05080a;
+}
+
+/* header */
+
+header {
+    position: relative;
+    box-shadow: 0px 0px 10px #000, 0px 0px 20px #000;
+    z-index: 999;
+}
+
+header::after {
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.542);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+
+header .header-bg {
+    width: 100%;
+    display: block;
+}
+
+
+/* main */
+
+header main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    z-index: 2;
+    height: 90%;
+}
+
+
+.main-bg {
+    width: 100%;
+    display: block;
+}
+
+/* nav */
+main nav {
+    height: 40px;
+}
+
+main nav .logo img {
+    width: 150px;
+    display: block;
+}
+
+/* accounts */
+
+.account {
+    position: relative;
+}
+
+.account-btn {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+.account-btn:hover {
+    border-color: #c8ff51;
+    box-shadow: 0px 0px 10px #c8ff51, 0px 0px 5px #c8ff51;
+}
+
+.account-btn img {
+    width: 100%;
+}
+
+.account .drop-down {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #17222c;
+    width: 110px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s;
+}
+
+main .active .drop-down {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.account .drop-down a {
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.account .drop-down a:hover {
+    background-color: #839759;
+
+}
+
+/* menu-container */
+
+main .menu-container {
+    position: relative;
+}
+
+main .menu-container:hover {
+    filter: drop-shadow(0px 0px 7px #00000036);
+}
+
+main nav .menu-btn {
+    background-color: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+main nav .active .menu-btn {
+    background-color: #94ab64;
+
+}
+
+main .menu-container .drop-down {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #E9D758;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s;
+    text-align: center;
+}
+
+main .active .drop-down {
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+
+main .menu-container .drop-down a {
+    display: block;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: .2s;
+    background-color: #94ab64;
+}
+
+main .menu-container .drop-down a:hover {
+    background-color: #839759;
+    transform: translateX(-5px);
+}
+
+/* banner */
+
+main .banner {
+    height: calc(100% - 40px);
+}
+
+main .banner img {
+    width: 65%;
+    margin: auto;
+    filter: drop-shadow(0px 0px 4px #000);
+}
+
+/* abs-btns */
+
+
+main .abs-btn {
+    text-transform: uppercase;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 13px;
+    transition: .3s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+main .abs-btn:hover {
+    letter-spacing: 2.5px;
+    opacity: 1;
+    color: #839759;
+    font-weight: bold;
+}
+
+main .right-btn {
+    left: 90%;
+    top: 50%;
+    transform: translateY(-2px);
+}
+
+main .left-btn {
+    right: 90%;
+    top: 50%;
+    transform: translateY(-3px);
+}
+
+/* calculator */
+
+.calculator {
+    background-color: #10181f;
+    padding: 70px 5%;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    z-index: 776;
+}
+
+.title {
+    width: fit-content;
+    margin: auto;
+    padding: 5px 1px;
+    background-color: #839759;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    clip-path: polygon(17% 0%, 83% 0%, 100% 50%, 83% 100%, 17% 100%, 0% 50%);
+    filter: drop-shadow(0px 0px 10px #000);
+}
+
+.title h2 {
+    clip-path: polygon(17% 0%, 83% 0%, 100% 50%, 83% 100%, 17% 100%, 0% 50%);
+    background-color: #10181f;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 40px;
+}
+
+.calculator .container {
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.calculator .container .card {
+    width: calc((100% - 60px) / 4);
+    position: relative;
+}
+
+.calculator .container .card:hover {
+    filter: drop-shadow(0px 0px 1px #839759);
+}
+
+.calculator .container .card .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+}
+
+.calculator .container .card .content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 50px #0000008c;
+    background-color: #0f161c;
+}
+
+
+.calculator .container .card .content .line {
+    display: block;
+    width: 100%;
+    background: rgb(245, 246, 249);
+    background: radial-gradient(circle, rgb(245, 246, 249) 0%, rgba(255, 255, 255, 0) 100%);
+    height: 2px;
+    opacity: 0.3;
+}
+
+.calculator .container .card .content .name {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "Cairo Play", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.calculator .container .card .content .description {
+    color: #839759;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.calculator .container .card .ancor {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.calculator .container .card .icon {
+    position: absolute;
+    right: 20px;
+    bottom: 4%;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: .4s;
+}
+
+.calculator .container .card:hover .icon {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Vision */
+
+.Vision {
+    background-color: #17222c;
+    padding: 70px 5%;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    z-index: 777;
+}
+
+.Vision .title {
+    margin: 0%;
+    margin-bottom: 50px;
+}
+
+.Vision>* {
+    width: calc(50% - 20px);
+}
+
+.Vision .border {
+    width: 5px;
+    background-color: #839759;
+    border-radius: 6px;
+
+}
+
+.Vision img {
+    width: 100%;
+    padding: 10%;
+}
+
+.Vision .word p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #d5d5d5;
+}
+
+/* rating */
+
+.rating {
+    background-color: #10181f;
+    padding: 70px 5%;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    z-index: 666;
+}
+
+.rating .container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.rating .container .opinion {
+    width: calc((100% - 30px) / 2);
+    box-shadow: 0px 0px 10px #000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #17222c;
+    align-items: flex-start;
+}
+
+.rating .container .opinion img {
+    width: 30%;
+    display: block;
+    border-radius: 50%;
+}
+
+.rating .container .opinion .name {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: "Cairo Play", sans-serif;
+}
+
+.rating .container .opinion .comment {
+    color: #94ab64;
+}
+
+.rating .container .opinion .interaction {
+    margin-top: 5px;
+}
+
+.rating .container .opinion .interaction .stars i {
+    color: #ffff51;
+}
+
+.rating .container .opinion .interaction .react-box button {
+    background-color: transparent;
+    font-size: 20px;
+    opacity: .5;
+}
+
+.rating .container .opinion .interaction .react-box button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rating .container .opinion .interaction .react-box button i {
+    color: #c8ff51;
+}
+
+.rating .container .opinion .interaction .react-box button span {
+    font-family: sans-serif;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.new-opinion {
+    background-color: #17222c;
+    box-shadow: 0px 0px 10px #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.new-opinion>img {
+    border-radius: 50%;
+    width: 65px;
+    display: block;
+    border: solid 4px #0f161c;
+}
+
+.new-opinion .body {
+    flex-grow: 1;
+}
+
+.new-opinion .body textarea {
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+    background-color: #0f161c;
+    resize: none;
+    box-shadow: inset 0px 0px 30px #00000070;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.new-opinion .body .footer {
+    margin-top: 10px;
+}
+
+.new-opinion .body .footer .stars i {
+    color: #E9D758;
+}
+
+.new-opinion .body .footer .stars span {
+    text-transform: capitalize;
+    opacity: .6;
+    display: block;
+    margin-top: 3px;
+}
+
+.new-opinion .body .footer .share-btn {
+    background-color: #839759;
+    font-size: 16px;
+    padding: 7px 80px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.new-opinion .body .footer .share-btn:hover {
+    background-color: #98ae67;
+}
+
+/* footer */
+
+footer {
+    background-color: #0a0f13;
+    padding: 70px 5%;
+}
+
+footer .about {
+    width: 35%;
+}
+
+footer .about img {
+    width: 200px;
+    display: block;
+}
+
+footer .about .info {
+    color: #98ae67;
+    margin: 10px 0px;
+    opacity: .7;
+}
+
+footer .about h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer .about h3 span {
+    color: #c8ff51;
+}
+
+footer .about h3 span i {
+    color: #c8ff51;
+}
+
+footer .about .social img {
+    width: 23px;
+}
+
+footer .quick-link h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+footer .quick-link a {
+    display: block;
+    color: #839759;
+    margin-bottom: 5px;
+}
+
+footer .quick-link a:hover {
+    color: #c8ff51;
+}
+
+footer .NEWSLETTER {
+    width: 35%;
+}
+
+footer .NEWSLETTER h3 {
+    font-size: 26px;
+}
+
+footer .NEWSLETTER p {
+    color: #98ae67;
+    margin: 10px 0px;
+    opacity: .7;
+}
+
+.subscribe-box {
+    height: 60px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.subscribe-box input {
+    background-color: #1f2935;
+    font-size: 16px;
+    padding: 0px 20px;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.subscribe-box button {
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-color: #839759;
+    font-size: 18px;
+}
+
+.powered {
+    background-color: #05080a;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.powered span {
+    color: #839759;
+    font-weight: bold;
+}
+
+
+
+/* account-section */
+
+.account-section {
+    padding: 70px 5%;
+    background-color: #0f161c;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.account-section>* {
+    width: calc(50% - 70px);
+}
+
+
+.account-section .title {
+    margin: 0%;
+}
+
+.account-section .sub-title {
+    margin: 20px 0px;
+    color: #839759;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-size: 18px;
+    opacity: .8;
+}
+
+.account-section .img img {
+    width: 100%;
+    filter: drop-shadow(50px 30px 50px #000);
+}
+
+/* applecation */
+
+.applecation .double-row .input-box {
+    width: calc((100% - 20px) / 2);
+}
+
+.applecation .single-row .input-box {
+    width: 100%;
+}
+
+.applecation .input-box label {
+    text-transform: capitalize;
+    font-family: "cairo play";
+}
+
+.applecation .input-box input {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #94ab64;
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.applecation input::placeholder {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "cairo play";
+}
+
+.account-section button[type="submit"] {
+    background-color: #839759;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 50px;
+    width: fit-content;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    margin-top: 20px;
+}
+
+.account-section button[type="submit"]:hover {
+    opacity: 1;
+    /* responsive */
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    header .header-bg {
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    main .banner img {
+        width: 50%;
+    }
+
+    main .left-btn {
+        right: 78%;
+        top: 53%;
+    }
+
+    main .right-btn {
+        left: 78%;
+        top: 52.5%;
+    }
+
+    .calculator .container .card {
+        width: 100% !important;
+    }
+
+    .Vision>* {
+        width: 100% !important;
+    }
+
+    .Vision .border {
+        display: none !important
+    }
+
+    .rating .container .opinion {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .new-opinion .body .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer>* {
+        width: 100% !important;
+
+    }
+
+    .account-section .img {
+        display: none;
+    }
+
+    .account-section form {
+        width: 100%;
+    }
+
+    .account-section .input-box {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:601px) and (max-width:840px) {
+
+    .calculator .container .card {
+        width: calc((100% - 20px) / 2) !important;
+    }
+
+    .Vision>* {
+        width: 100% !important;
+    }
+
+    .Vision .border {
+        display: none !important
+    }
+
+    .rating .container .opinion {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .new-opinion .body .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer>* {
+        width: 100% !important;
+    }
+
+    .account-section form {
+        width: 100%;
+    }
+
+    .account-section .img {
+        display: none;
+    }
+}
+
+@media (min-width:800px) and (max-width:1052px) {
+    .calculator .container .card {
+        width: calc((100% - 40px) / 3) !important;
+    }
+}
+
+@media (min-width:0px) and (max-width:450px) {
+
+    .rating .container .opinion {
+        flex-direction: column;
+    }
+
+    .interaction {
+        margin-top: 5px;
+    }
+
+    .interaction .stars span {
+        display: none;
+    }
+
+
+    .new-opinion {
+        flex-direction: column;
+    }
+
+    .calculator {
+        padding: 70px 7%;
+    }
+
+    .Vision {
+        padding: 70px 7%;
+    }
+
+    .rating {
+        padding: 70px 7%;
+    }
+
+    footer {
+        padding: 70px 7%;
+    }
+
+
+    .follow {
+        gap: 6px !important;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width:841px) and (max-width:1000px) {
+    .account-section>* {
+        width: calc(50% - 30px);
+    }
+}
+
+
+.applecation .input-box .value {
+    background-color: #839759;
+    line-height: 16px;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 3px;
+    text-transform: capitalize;
+    width: 80px;
+}
+
+
+/*  */
+
+input[type=range] {
+    padding: 0% !important;
+}
+
+
+/* coming */
+
+.coming {
+    text-align: center;
+    font-size: calc(1.8vw + 40px);
+    padding: 70px 5%;
+    text-transform: capitalize;
+    font-family: "cairo play";
+    font-weight: bold;
+    color: #f0f0f0;
+    white-space: nowrap;
+    background-color: #17222c;
+}
+
+.back {
+    display: block;
+    font-size: 20px;
+    color: #839759;
+    text-transform: capitalize;
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.back i {
+    font-size: 16px;
+}
+
+.back:hover {
+    opacity: 1;
+}
+
+/* trainers */
+
+.side-bar {
+    width: 200px;
+    height: calc(100vh - 70px);
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+.side-bar .side-title {
+    color: #839759;
+    font-family: "cairo play";
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.side-bar .side-title:nth-child(3) {
+    margin-top: 30px;
+}
+
+.side-bar i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.side-bar .ancor-container {
+    /* padding-left: 15px; */
+}
+
+.side-bar .ancor-container a {
+    display: block;
+    opacity: .8;
+    margin-bottom: 5px;
+}
+
+.side-bar .ancor-container a:hover {
+    opacity: 1;
+}
+
+.main-container {
+    width: calc(100% - 200px);
+    background-color: #10181f;
+    padding: 70px 5%;
+}
+
+.trainers-container {
+    margin-top: 60px;
+}
+
+.trainers-container .card {
+    width: calc((100% - 60px) / 4);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 4px #000000a1;
+    cursor: pointer;
+}
+
+.trainers-container .card:hover {
+    box-shadow: 0px 0px 4px #98ae67;
+}
+
+.trainers-container .card::after {
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+    opacity: 0;
+    transition: .4s linear;
+}
+
+.trainers-container .card:hover::after {
+    opacity: 1;
+}
+
+.trainers-container .card img {
+    width: 100%;
+    aspect-ratio: 1/1.4;
+    display: block;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.trainers-container .card:hover img {
+    transform: scale(1.3);
+}
+
+.trainers-container .card .info {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(50px);
+    transition: .4s;
+}
+
+.trainers-container .card:hover .info {
+    transform: translateY(0px);
+}
+
+.trainers-container .card .info .name {
+    padding: 10px;
+    font-family: "cairo play";
+    text-transform: uppercase;
+    color: #d5d5d5;
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    text-shadow: 0px 0px 7px #000;
+}
+
+
+.trainers-container .card .info .details {
+    height: 50px;
+    background-color: #0f161c;
+    box-shadow: 0px 0px 13px 4px #000;
+    padding: 0px 10px;
+}
+
+.trainers-container .card .info .details button {
+    opacity: .8;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+
+}
+
+.trainers-container .card .info .details button:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #839759;
+}
+
+
+.avilable-btn i {
+    color: #40ff00;
+    text-shadow: 0px 0px 5px #40ff00;
+}
+
+.not-avilable-btn i {
+    color: #ff1500;
+    text-shadow: 0px 0px 5px #ff1500;
+}
+
+.information {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    padding: 20px 10px;
+}
+
+.information>div {
+    margin-bottom: 5px;
+    transform: translateX(-120%);
+    transition: .4s;
+}
+
+.information div span {
+    color: #839759;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.information div:nth-child(1) {
+    transform: translateX(0%);
+}
+
+.information div:nth-child(4) {
+    transition-delay: 0s;
+}
+
+.information div:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.information div:nth-child(2) {
+    transition-delay: .4s;
+}
+
+/* hover 1*/
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) img {
+    transform-origin: left;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(2) {
+    transition-delay: 0s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(1):hover) .information div {
+    transform: translateX(0px);
+}
+
+/* hover 2*/
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) img {
+    transform-origin: right;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) .information div:nth-child(1) {
+    transform: translateX(-120%);
+    transition-delay: .4s;
+}
+
+.trainers-container .card .social {
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    z-index: 3;
+    padding: 20px 10px;
+}
+
+.trainers-container .card .social a {
+    display: block;
+    margin-bottom: 10px;
+    transform: translateX(200%);
+    transition: .4s;
+    opacity: 0;
+    text-align: center;
+}
+
+.trainers-container .card .social a:nth-child(2) {
+    transition-delay: .2s;
+}
+
+.trainers-container .card .social a:nth-child(3) {
+    transition-delay: .3s;
+}
+
+.trainers-container .card .social a:nth-child(4) {
+    transition-delay: .4s;
+}
+
+.trainers-container .card .social a i {
+    color: #d5d5d5;
+    font-size: 18px;
+}
+
+.trainers-container .card .social a:hover i {
+    color: #fff;
+}
+
+
+.trainers-container .card:has(.info .details button:nth-child(2):hover) .social a {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* hover 3*/
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) img {
+    transform-origin: top;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) .information div:nth-child(1) {
+    transform: translateX(-120%);
+    transition-delay: .4s;
+}
+
+
+.trainers-container .card .stars {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    z-index: 3;
+    padding: 20px 10px;
+    transform: translateX(-50%) translateY(-150%);
+    white-space: nowrap;
+    transition-duration: .3s;
+}
+
+.trainers-container .card .stars i {
+    color: #d5d5d5;
+}
+
+.trainers-container .card:has(.info .details button:nth-child(3):hover) .stars {
+    transform: translateX(-50%);
+    transition-delay: .4s;
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .side-bar {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .trainers-container .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .result img {
+        display: none;
+    }
+
+    .result .result-information {
+        padding: 30px !important;
+    }
+
+    .result .result-information p {
+        padding: 15px;
+    }
+
+}
+
+
+@media (min-width:601px) and (max-width:710px) {
+    .trainers-container .card {
+        width: 100%;
+    }
+}
+
+@media (min-width:711px) and (max-width:800px) {
+    .trainers-container .card {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width:801px) and (max-width:1100px) {
+    .trainers-container .card {
+        width: calc((100% - 40px) / 3);
+    }
+}
+
+.side-bar .side-title:nth-child(5) {
+    margin-top: 30px;
+}
+
+/* result */
+.result-con {
+    overflow: hidden;
+    width: 0px;
+    transition: 1s ease;
+    background-color: #1f2935;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 8px #000, inset 0px 0px 8px #000;
+    border: solid 1px #000000b0;
+}
+
+.result-con .slide {
+    display: none;
+}
+
+.result img {
+    width: 35%;
+}
+
+.result .result-information {
+    flex-grow: 1;
+    padding: 30px;
+    padding-left: 0px;
+
+}
+
+.result .result-information p {
+    background-color: #0d1318;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 20px #000;
+    flex-wrap: wrap;
+
+}
+
+.result .result-information p span {
+    color: #94ab64;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+
+.result .result-information .bmi-result-advice {
+    padding: 20px;
+}
+
+.file-box {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #94ab64;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    position: relative;
+    padding: 0% !important;
+}
+
+.file-box input {
+    margin: 0% !important;
+    
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.file-box div {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: "cairo play";
+    opacity: .6;
+    padding: 12px;
+}
+.file-box:hover div{
+    opacity: 1;
+}
+
+.file-box div i{
+    margin-right: 5px;
+}
+
+.file-box div button{
+    color: #0a0f13;
+    background-color: #98ae67;
+    background-color: #aeff00;
+    padding:7px 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: bold;
+}
