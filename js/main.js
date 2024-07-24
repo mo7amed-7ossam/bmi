@@ -89,23 +89,23 @@ $(".bmi-form").submit(function (e) {
 
     if (bmi <= 18.5) {
         $(".bmi-result-text").html("<span>Your category : </span> Underweight");
-        $(".wieght-img").attr("src", "img/min-18.svg")
+        $(".wieght-img").attr("src", "images/min-18.svg")
         $(".bmi-result-advice").html("Try to increase your calorie intake by eating meals rich in calories and protein.<br>Find healthy ways to gain weight, such as eating snacks between main meals.");
     } else if (bmi > 18.5 && bmi <= 24.9) {
         $(".bmi-result-text").html("<span>Your category : </span>Normal weight");
-        $(".wieght-img").attr("src", "img/18-24.svg")
+        $(".wieght-img").attr("src", "images/18-24.svg")
         $(".bmi-result-advice").html("Maintain a healthy lifestyle, including good sleep and regular exercise.<br>Eat balanced meals that include vegetables, fruits and healthy proteins.")
     } else if (bmi > 24.9 && bmi <= 34.9) {
         $(".bmi-result-text").html("<span>Your category : </span>Obesity Class I");
-        $(".wieght-img").attr("src", "img/24-30.svg")
+        $(".wieght-img").attr("src", "images/24-30.svg")
         $(".bmi-result-advice").html("Do regular exercise and stay away from fatty and packaged foods.<br>Eat healthy foods while maintaining appropriate calories.")
     } else if (bmi > 34.9 && bmi <= 39.9) {
         $(".bmi-result-text").html("<span>Your category : </span>Obesity Class II");
-        $(".wieght-img").attr("src", "img/more-30.svg")
+        $(".wieght-img").attr("src", "images/more-30.svg")
         $(".bmi-result-advice").html("Start a proper exercise program and reduce the amount of sugars and saturated fats in food.<br>Consult your doctor for a personalized nutrition plan for your condition.")
     } else if (bmi > 39.9) {
         $(".bmi-result-text").html("<span>Your category : </span>Obesity Class III");
-        $(".wieght-img").attr("src", "img/more-30.svg")
+        $(".wieght-img").attr("src", "images/more-30.svg")
         $(".bmi-result-advice").html("Seek professional medical support to improve your overall health and risk of obesity-related chronic diseases.<br>Follow a healthy diet with a balanced exercise program to gradually lose excess weight.")
     }
 })
